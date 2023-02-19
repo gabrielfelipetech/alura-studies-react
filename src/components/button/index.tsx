@@ -1,10 +1,11 @@
 import React from 'react';
 import style from './style.module.scss';
 interface btnTypes {
-    textBtn: String
+    textBtn: String;
+    typeBtn: 'button' | 'submit';
 }
-export function Button ({textBtn} : btnTypes) {
+export function Button ({textBtn, typeBtn} : btnTypes) {
     return (
-        <button className={style.botao}>{textBtn}</button>
+        <button type={typeBtn} className={style.botao}>{textBtn}</button>
     )
 }
