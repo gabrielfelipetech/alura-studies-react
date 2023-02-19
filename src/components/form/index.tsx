@@ -30,7 +30,7 @@ export function Form() {
             required
           />
         </div>
-        <Button />
+        <Button textBtn={'Adicionar'}/>
       </form>
     )
 }

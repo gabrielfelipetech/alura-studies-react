@@ -1,7 +1,10 @@
 import React from 'react';
 import style from './style.module.scss';
-export function Button () {
+interface btnTypes {
+    textBtn: String
+}
+export function Button ({textBtn} : btnTypes) {
     return (
-        <button className={style.botao}>Botão</button>
+        <button className={style.botao}>{textBtn}</button>
     )
 }
